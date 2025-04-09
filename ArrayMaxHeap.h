@@ -27,7 +27,7 @@ private:
     // Tests whether this node is a leaf. 
     bool isLeaf( int nodeIndex) const;
     // Converts a semiheap to a heap. 
-    //void heapRebuild( int subTreeRootIndex);
+    void heapRebuild( int subTreeRootIndex);
     // Creates a heap from an unordered array. 
     //TODO: void heapCreate(); 
 
@@ -40,8 +40,9 @@ public:
     int getNumberOfNodes() const; 
     int getHeight() const; 
     ItemType peekTop() const throw(PrecondViolatedExcep); 
-    //bool add( const ItemType& newData); 
-    //bool remove(); 
+    bool add( const ItemType& newData); 
+    bool remove(); 
+    void dbg();
     //void clear(); 
 }; // end ArrayMaxHeap 
 #include "ArrayMaxHeap.cpp" 

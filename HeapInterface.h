@@ -26,10 +26,10 @@ class HeapInterface
 	 @param newData The data for the new node. 
 	 @post The heap contains a new node. 
 	 @return True if the addition is successful, or false if not. */ 
-	//virtual bool add(const ItemType& newData) = 0; 
+	virtual bool add(const ItemType& newData) = 0; 
 	 /** Removes the root node from this heap. 
 	@return True if the removal is successful, or false if not. */ 
-	//virtual bool remove() = 0; 
+	virtual bool remove() = 0; 
 	 /** Removes all nodes from this heap. */ 
 	//virtual void clear() = 0; 
 }; // end HeapInterface 

@@ -6,10 +6,25 @@ using namespace std;
 
 int main()
 {
+	//TODO: wasn't supposed to add QueueInteface, supposed to be priority queue interface so check attachments to see if prof fixed that
 	ArrayMaxHeap<int> h;
+
+	h.add(10);
 	cout << h.getHeight() << endl;
 	cout << h.getNumberOfNodes() << endl;
 	cout << h.isEmpty() << endl;
+
+	h.add(9);
+	h.add(6);
+	cout << h.getHeight() << endl;
+	h.add(3);
+	h.add(2);
+	h.add(5);
+
+	h.getHeight();
+	h.dbg();
+	h.remove();
+	h.dbg();
 
 	return 0;
 }
