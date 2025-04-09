@@ -63,11 +63,32 @@ void ArrayMaxHeap<ItemType>::heapRebuild(int subTreeRootIndex)
 }
 
 template<class ItemType>
+void ArrayMaxHeap<ItemType>::heapCreate()
+{
+	for (int index = itemCount / 2; index >= 0; index--)
+		heapRebuild(index);
+}
+
+template<class ItemType>
 ArrayMaxHeap<ItemType>::ArrayMaxHeap()
 {
 	itemCount = 0;
 	maxItems = DEFAULT_CAPACITY;
 	items = new ItemType[maxItems]; //Using new because items is a pointer.
+}
+
+template<class ItemType>
+ArrayMaxHeap<ItemType>::ArrayMaxHeap(const ItemType someArray[], const int arraySize)
+{
+	maxItems = arraySize * 2;
+	itemCount = arraySize;
+	items = new ItemType[maxItems];
+
+	//Copy values into array
+	for (int i = 0; i < itemCount; i++)
+		items[i] = someArray[i];
+
+	heapCreate();
 }
 
 template<class ItemType>
@@ -160,4 +181,10 @@ void ArrayMaxHeap<ItemType>::dbg()
 {
 	for (int i = 0; i < itemCount; i++)
 		cout << i << "=" << items[i] << endl;
+}
+
+template<class ItemType>
+void ArrayMaxHeap<ItemType>::clear()
+{
+	itemCount = 0;
 }

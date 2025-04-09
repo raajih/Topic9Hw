@@ -29,11 +29,11 @@ private:
     // Converts a semiheap to a heap. 
     void heapRebuild( int subTreeRootIndex);
     // Creates a heap from an unordered array. 
-    //TODO: void heapCreate(); 
+    void heapCreate(); 
 
 public: 
     ArrayMaxHeap(); 
-    //TODO: implement: turns regular array into a heap ArrayMaxHeap(const ItemType someArray[], const int arraySize);
+    ArrayMaxHeap(const ItemType someArray[], const int arraySize);
     virtual ~ArrayMaxHeap();
     // HeapInterface Public Methods:
     bool isEmpty() const; 
@@ -43,7 +43,7 @@ public:
     bool add( const ItemType& newData); 
     bool remove(); 
     void dbg();
-    //void clear(); 
+    void clear(); 
 }; // end ArrayMaxHeap 
 #include "ArrayMaxHeap.cpp" 
 #endif 

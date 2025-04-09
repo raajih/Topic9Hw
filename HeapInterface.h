@@ -31,6 +31,6 @@ class HeapInterface
 	@return True if the removal is successful, or false if not. */ 
 	virtual bool remove() = 0; 
 	 /** Removes all nodes from this heap. */ 
-	//virtual void clear() = 0; 
+	virtual void clear() = 0; 
 }; // end HeapInterface 
 #endif

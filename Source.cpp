@@ -21,10 +21,10 @@ int main()
 	h.add(2);
 	h.add(5);
 
-	h.getHeight();
-	h.dbg();
-	h.remove();
-	h.dbg();
+	int anArray[] = { 1, 4, 12, 7 };
+	ArrayMaxHeap<int> arrayToHeap(anArray, 4);
+	arrayToHeap.dbg();
+	
 
 	return 0;
 }
