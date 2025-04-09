@@ -130,11 +130,15 @@
     <ClCompile Include="ArrayMaxHeap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Heap_PriorityQueue.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayMaxHeap.h" />
     <ClInclude Include="HeapInterface.h" />
+    <ClInclude Include="Heap_PriorityQueue.h" />
     <ClInclude Include="PrecondViolatedExcep.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

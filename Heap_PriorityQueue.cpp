@@ -21,6 +21,11 @@ bool Heap_PriorityQueue<ItemType>::remove()
 { 
     return ArrayMaxHeap<ItemType>::remove(); 
 } // end remove 
+template<class ItemType>
+void Heap_PriorityQueue<ItemType>::clear()
+{
+    return ArrayMaxHeap<ItemType>::clear();
+}
 template<class ItemType> 
 ItemType Heap_PriorityQueue<ItemType>::peek() const throw(PrecondViolatedExcep) 
 { 
