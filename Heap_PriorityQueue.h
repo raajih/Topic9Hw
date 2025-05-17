@@ -3,9 +3,7 @@
 #ifndef _HEAP_PRIORITY_QUEUE 
 #define _HEAP_PRIORITY_QUEUE
 #include "ArrayMaxHeap.h" 
-//TODO: get this file#include "PriorityQueueInterface.h" 
 template<class ItemType>
-//TODO: when you get PriorityQueueInterface, add public PriorityQueueInterface<ItemType>, before private ArrayMaxHeap<ItemType> here
 class Heap_PriorityQueue : private ArrayMaxHeap<ItemType> 
 { 
 public: 

@@ -1,5 +1,5 @@
-//TODO: Due to the tree being complete and full. To get the children of a node, multiply the index of node then add 1 for the left node, or add 2 for right node.
-//TODO: To get the parent node. Subtract by 1 then divide by 2 (works for both because int math truncates decimal)
+//Raajih Roland
+//Heap Homework
 #include <iostream>
 #include "Heap_PriorityQueue.h"
 using namespace std;
@@ -28,7 +28,6 @@ struct Item
 
 int main()
 {
-	//TODO: wasn't supposed to add QueueInteface, supposed to be priority queue interface so check attachments to see if prof fixed that
 	Heap_PriorityQueue<Item> list;
 	int tempPriority, choice;
 	string tempTask;
